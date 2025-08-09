@@ -1,0 +1,42 @@
+{
+  "name": "json-key-search",
+  "displayName": "JSON Key Search",
+  "description": "Search deeply nested JSON keys using dot notation",
+  "version": "0.0.1",
+  "publisher": "MithatErcan",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mithatercan/object-key-search.git"
+  },
+  "icon": "logo.png",
+  "main": "extension.js",
+  "activationEvents": [
+    "onCommand:extension.searchJsonKey",
+    "onCommand:extension.searchJsonKeyLive"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.searchJsonKey",
+        "title": "Search JSON Field by Dot Notation"
+      },
+      {
+        "command": "extension.searchJsonKeyLive",
+        "title": "Search JSON Field by Dot Notation (Live)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.searchJsonKeyLive",
+        "key": "ctrl+alt+j",
+        "mac": "cmd+alt+j",
+        "win": "ctrl+alt+j",
+        "linux": "ctrl+alt+j",
+        "when": "editorTextFocus && !editorReadonly"
+      }
+    ]
+  }
+}
