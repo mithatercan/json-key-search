@@ -2,7 +2,7 @@
   "name": "json-key-search",
   "displayName": "JSON Key Search",
   "description": "Search deeply nested JSON keys using dot notation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "MithatErcan",
   "engines": {
     "vscode": "^1.75.0"
